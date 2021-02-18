@@ -4,5 +4,8 @@
 
 * starting king jenkins for demo
 
+## 0.5.0 
+
+* Jcasc with all the configuration
 
 
