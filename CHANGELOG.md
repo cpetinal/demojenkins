@@ -8,4 +8,8 @@
 
 * Jcasc with all the configuration
 
+## 0.6.0
+
+* predefined jobs with coolgame
+
 

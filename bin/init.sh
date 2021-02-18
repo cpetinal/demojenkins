@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
 
-version='0.5.0'
+version='0.6.0'
 
-#TODO: delete this line
-docker container rm king-practice5
-
-configFolder='/home/cpetinal/king/vol/jenkins5'
+configFolder='/home/cpetinal/king/vol/jenkins6'
 echo "if you have problems with chown you can configure it manually by giving the owner of the volume folder to 1000 user to avoid jenkins runtime problems"
 
 #######################################################
@@ -61,5 +58,5 @@ mkdir -p $configFolder
 chown 1000 $configFolder
 echo ${version}
 echo ${configVersion}
-docker run -p 8080:8080 -p 50000:50000 -v $configFolder:/var/jenkins_home:z --name  king-practice -t king-practice:${version}
+docker run -p 8080:8080 -p 50000:50000 -v $configFolder:/var/jenkins_home:z --name  king-practice6 -t king-practice:${version}
 
