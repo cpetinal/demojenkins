@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-version='0.33.0'
-
-configFolder='/home/cpetinal/king/vol/jenkins33'
 echo "if you have problems with chown you can configure it manually by giving the owner of the volume folder to 1000 user to avoid jenkins runtime problems"
 
 #######################################################

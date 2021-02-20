@@ -3,9 +3,9 @@ credentials:
     domainCredentials:
     - credentials:
       - usernamePassword:
-          description: "token"
-          id: "token"
-          password: "{AQAAABAAAAAwrJ+GaKCIlTq5mn6bmMJ9UjHUt4y3TN4R1DnVXOgsty3cGoS1HDX5JsX+/dbCt03Ou0qJjaYtSNOQS663tcI4Pg==}"
+          description: "GitHub token"
+          id: "token2"
+          password: ""
           scope: GLOBAL
           username: "jenkins"
 unclassified:
