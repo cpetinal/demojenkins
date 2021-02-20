@@ -57,5 +57,5 @@ mkdir -p $configFolder
 chown 1000 $configFolder
 echo ${version}
 echo ${configVersion}
-docker run -p 8080:8080 -p 50000:50000 -v $configFolder:/var/jenkins_home:z --name  king-practice7 -t king-practice:${version}
+docker run -p 8080:8080 -p 50000:50000 -v $configFolder:/var/jenkins_home:z --name  king-practice -t king-practice:${version}
 

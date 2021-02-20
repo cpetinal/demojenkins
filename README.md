@@ -16,7 +16,7 @@ ej: "sudo ./bin/init.sh -v '0.7.0' -m '/home/cpetinal/king/vol/jenkins7'"
 
 3-put into your browser "localhost:8080" and you will see the initial admin web page"
 
-4-we take the admin password from the log of the container or for the location into the container (/var/jenkins_home/secrets/initialAdminPassword)
+4-we take the admin password from the log of the container or for the location into the container (/var/jenkins_home/secrets/initialAdminPassword) IMPORTAN READ STEP 5
 
 5-Ommit the plugin configuration. During the docker build stage jenkins have downloaded all the necesary plugins to the practice. select the X to close this windows.
 
@@ -27,9 +27,15 @@ ej: "sudo ./bin/init.sh -v '0.7.0' -m '/home/cpetinal/king/vol/jenkins7'"
 Launch: sudo ./bin/createjob.sh '[container-name]' '[Volumen location]'
 ej: sudo ./bin/createjob.sh 'king-practice' '/home/cpetinal/king/vol/jenkins7'
 
-8-now jenkins will be reboot and when you login another time and go to the main web page you can see now the multibranch pipeline coolgame
+8-now jenkins will be reboot and when you login another time and go to the main web page you can see now the multibranch pipeline coolgame in the Dashboard
 
 9-first of all go to configuration to put the githubToken if not work create it another time (Jenkins job syncronized problem).
+    - Go to credentials 
+    - select jenkins
+    - Global credentials (unrestricted)
+    - Select token 2
+    - update
+    - into the field Password put the code from the pdf
 
 10-reindex the pipeline and you will see coolgame repository syncronized with the jenkins.
 

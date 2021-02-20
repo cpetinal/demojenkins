@@ -13,10 +13,13 @@ ENV JENKINS_PRECONFIG_FOLDER="/usr/share/jenkins/ref"
 RUN /usr/local/bin/install-plugins.sh < $JENKINS_PRECONFIG_FOLDER/plugins.txt
 COPY ./src/scripts/run.sh /etc/service/jenkins/run
 COPY ./src/conf/casc_configs/ $JENKINS_PRECONFIG_FOLDER/casc_configs
+
+USER root
 RUN yum update -y \
   && yum install -y \
   gcc-c++ \
   cmake \
   make \
-  && yum clean all 
+  && yum clean all
+USER jenkins
 
