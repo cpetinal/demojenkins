@@ -1,0 +1,16 @@
+Started by timer
+[Thu Feb 18 20:32:00 UTC 2021] Starting branch indexing...
+[8mha:////4BQZ7t178KSxdZZB8Z0wtaaYhk96nP3MwHofhRXK2t0TAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHT5tuvz0wGNTwn/jgAAAA==[0mConnecting to https://api.github.com with no credentials, anonymous access
+ERROR: [Thu Feb 18 20:32:01 UTC 2021] Could not update folder level actions from source 33ea5629-5e40-4bf3-a931-6a2839c9372c
+hudson.AbortException: Invalid scan credentials when using anonymous access to connect to cpetinal/CoolGame on https://api.github.com
+	at org.jenkinsci.plugins.github_branch_source.GitHubSCMSource.retrieveActions(GitHubSCMSource.java:1903)
+	at jenkins.scm.api.SCMSource.fetchActions(SCMSource.java:848)
+	at jenkins.branch.MultiBranchProject.computeChildren(MultiBranchProject.java:598)
+	at com.cloudbees.hudson.plugins.folder.computed.ComputedFolder.updateChildren(ComputedFolder.java:278)
+	at com.cloudbees.hudson.plugins.folder.computed.FolderComputation.run(FolderComputation.java:165)
+	at jenkins.branch.MultiBranchProject$BranchIndexing.run(MultiBranchProject.java:1032)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+[Thu Feb 18 20:32:01 UTC 2021] Finished branch indexing. Indexing took 0.7 sec
+FATAL: Invalid scan credentials when using anonymous access to connect to cpetinal/CoolGame on https://api.github.com
+Finished: FAILURE

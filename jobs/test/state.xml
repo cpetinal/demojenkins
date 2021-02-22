@@ -1,0 +1,23 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.branch.MultiBranchProject_-State plugin="branch-api@2.6.2">
+  <sourceActions>
+    <entry>
+      <string>33ea5629-5e40-4bf3-a931-6a2839c9372c</string>
+      <list>
+        <org.jenkinsci.plugins.github__branch__source.GitHubRepoMetadataAction plugin="github-branch-source@2.9.6"/>
+        <jenkins.scm.api.metadata.ObjectMetadataAction plugin="scm-api@2.6.4">
+          <objectDescription>CoolGame</objectDescription>
+        </jenkins.scm.api.metadata.ObjectMetadataAction>
+        <org.jenkinsci.plugins.github__branch__source.GitHubLink plugin="github-branch-source@2.9.6">
+          <iconClassName>icon-github-repo</iconClassName>
+          <url>https://github.com/cpetinal/CoolGame</url>
+        </org.jenkinsci.plugins.github__branch__source.GitHubLink>
+        <org.jenkinsci.plugins.github__branch__source.GitHubDefaultBranch plugin="github-branch-source@2.9.6">
+          <repoOwner>cpetinal</repoOwner>
+          <repository>CoolGame</repository>
+          <defaultBranch>master</defaultBranch>
+        </org.jenkinsci.plugins.github__branch__source.GitHubDefaultBranch>
+      </list>
+    </entry>
+  </sourceActions>
+</jenkins.branch.MultiBranchProject_-State>
